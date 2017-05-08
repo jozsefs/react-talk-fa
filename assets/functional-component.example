@@ -1,0 +1,17 @@
+function Welcome({name}) {
+  return <h1>Hello, {name}</h1>
+}
+
+// or
+
+const Welcome = ({name}) => <h1>Hello, {name}</h1>
+
+// higher order component
+
+const SpecialWelcome = ({name}) => (
+    <div className="special-welcome">
+        <Welcome name={name} />
+    </div>
+)
+
+ReactDOM.render(<SpecialWelcome name="Guest"/>, document.getElementById('app'))

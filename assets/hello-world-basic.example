@@ -1,0 +1,3 @@
+var rootElement = React.createElement('h1', {}, 'Hello World');
+
+ReactDOM.render(rootElement, document.getElementById('app'))
